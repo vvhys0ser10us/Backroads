@@ -255,9 +255,7 @@ About
 @media screen and (min-width: 992px) {
   .about-center {
     display: flex;
-    gap: 0 2rem;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap;
   }
 
@@ -290,12 +288,148 @@ About
 Services
 ===============
 */
+.services {
+  background: var(--clr-grey-10);
+}
+
+.service-icon {
+  font-size: 2rem;
+  color: var(--clr-primary-1);
+  background: var(--clr-primary-5);
+  display: inline-block;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.service-text {
+  max-width: 20rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (min-width: 576px) {
+  .services-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .service {
+    flex: 0 0 calc(50% - 1rem);
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .service {
+    flex: 0 0 calc(33.333% - 1rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .service {
+    display: flex;
+  }
+
+  .service-icon {
+    align-self: start;
+  }
+
+  .service-info {
+    text-align: left;
+    padding-left: 1rem;
+  }
+
+  .service-title {
+    margin-bottom: 0.5rem;
+  }
+}
 
 /*
 =============== 
 Featured Tours
 ===============
 */
+.img-container {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tour-img {
+  height: 15rem;
+  object-fit: cover;
+}
+
+.tour-card {
+  margin-bottom: 2rem;
+  box-shadow: var(--light-shadow);
+  background: var(--clr-grey-10);
+  transition: var(--transition);
+}
+
+.tour-card:hover {
+  transform: scale(1.02);
+  box-shadow: var(--dark-shadow);
+}
+
+.tour-date {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: var(--clr-primary-8);
+  color: var(--clr-primary-1);
+  padding: 0.25rem 0.5rem;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.tour-info {
+  /* text-align: left; */
+  padding: 1.25rem 1.5rem;
+}
+
+.tour-btn {
+  text-align: center;
+}
+
+.tour-footer {
+  display: flex;
+  justify-content: space-between;
+  text-transform: capitalize;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tour-footer p {
+  color: var(--clr-primary-5);
+  margin-bottom: 0;
+  line-height: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .featured-center {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .tour-card {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .tour-card {
+    flex: 0 0 calc(33.33% - 2rem);
+  }
+}
 
 /*
 =============== 
