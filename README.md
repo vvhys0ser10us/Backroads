@@ -2,7 +2,7 @@
 <h1 align="center">Backroads</h1>
 
 ## Project description
-<p align="center">A simple web project bulit with felxbox.
+<p align="center">A simple web project bulit with flexbox.
 
 ## Author
 **Haoran Zhou**
