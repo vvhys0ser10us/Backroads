@@ -1,8 +1,8 @@
 ## Project Name
-<h1 align="center">Backroad</h1>
+[<h1 align="center">Backroad</h1>](https://xxxtravel-travelxxx.netlify.app/)
 
 ## Project description
- - [View](https://xxxtravel-travelxxx.netlify.app/)
+
 <p align="center">A simple web project bulit with flexbox.
 
 ## Author
